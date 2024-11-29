@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    ports:
+      - "8001:8001"
+    depends_on:
+      - openwebui
+    environment:
+      - model=llama3.1:latest
+      - model_base_url=http://host.docker.internal:11434
+
+  openwebui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui:/app/backend/data
+    restart: always
+
+volumes:
+  open-webui:
