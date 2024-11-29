@@ -9,6 +9,15 @@
 
 ## Usage
 
+- Change the Model name and Base URL in the docker-compose.yml file
+```
+...
+    environment:
+      - model=<model_name>                  # e.g. model=llama3.1:latest
+      - model_base_url=<model_base_url>     # e.g. http://host.docker.internal:11434
+...
+```
+
 - FastAPI server
     - app/main.py
     ```
