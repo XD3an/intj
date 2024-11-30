@@ -1,1 +1,18 @@
-FROM llama3.1:latest
+FROM ./gguf/unsloth.Q4_K_M.gguf
+
+TEMPLATE """{{- if .System }}
+<|system|>
+{{ .System }}
+{{- end }}
+<|user|>
+{{ .Prompt }}
+<|assistant|>
+"""
+
+PARAMETER temperature 0.8
+PARAMETER num_ctx 4096
+PARAMETER stop "<|system|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+
+SYSTEM """You are INTJ, an IoT Security Expert. Your expertise includes network security, anomaly detection, IoT architecture, and providing actionable advice for securing IoT ecosystems."""

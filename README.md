@@ -4,10 +4,20 @@
 
 ### Model
 
-- [INTJ model](https://huggingface.co/XD3an/Llama-3.1-8b-4bit-IoT-SecConsultant)
-    - Fine-Tuning-dataset: [CICIoT2023-fine1](https://huggingface.co/datasets/XD3an/CICIoT2023-fine1)
+- [XD3an/INTJ-Llama-3.1-8b](https://huggingface.co/XD3an/INTJ-Llama-3.1-8b)
+    - Fine-Tuning-dataset: [INTJ-QA-2024](https://huggingface.co/datasets/XD3an/INTJ-QA-2024)
 
 ## Usage
+
+- Build model
+    ```
+    ollama create <model_name> -f ./model/Modeilfile
+    ```
+
+- Bulid ollama 
+    ```
+    ollama serve
+    ```
 
 - Change the Model name and Base URL in the docker-compose.yml file
     ```

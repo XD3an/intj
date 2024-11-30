@@ -11,7 +11,7 @@ services:
     depends_on:
       - openwebui
     environment:
-      - model=llama3.1:latest
+      - model=intj-llama-3.1-8b-q4:latest
       - model_base_url=http://host.docker.internal:11434
 
   openwebui:

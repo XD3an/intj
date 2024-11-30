@@ -1,0 +1,902 @@
+[
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.3298071530725829, 'Srate': 0.3298071530725829, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83343831.92013878, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 57.04, 'Protocol Type': 6.33, 'Duration': 64.0, 'Rate': 4.29055619234088, 'Srate': 4.29055619234088, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 581.33, 'Min': 54.0, 'Max': 66.3, 'AVG': 54.79640359477124, 'Std': 2.822973164898668, 'Tot size': 57.04, 'IAT': 82926067.46666369, 'Number': 9.5, 'Magnitue': 10.464666105007, 'Radius': 4.010353307404363, 'Covariance': 160.9878423970566, 'Variance': 0.05, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 33.39679910820925, 'Srate': 33.39679910820925, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83127993.92767186, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.3281749534606933, 'Header_Length': 76175.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 4642.133009503881, 'Srate': 4642.133009503881, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83015696.3809774, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.117320384979248, 'Header_Length': 101.73, 'Protocol Type': 6.11, 'Duration': 65.91, 'Rate': 6.202211257193957, 'Srate': 6.202211257193957, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.01, 'fin_count': 0.04, 'urg_count': 0.0, 'rst_count': 0.02, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 644.6, 'Min': 57.88, 'Max': 131.6, 'AVG': 67.95922986971749, 'Std': 23.11311145899284, 'Tot size': 57.88, 'IAT': 82972999.18247831, 'Number': 9.5, 'Magnitue': 11.34687641955042, 'Radius': 32.716242535267426, 'Covariance': 3016.8082858386715, 'Variance': 0.19, 'Weight': 141.55}",
+      "output":"DoS-SYN_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 47.0, 'Duration': 64.0, 'Rate': 1.954122905142456, 'Srate': 1.954122905142456, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 6216.0, 'Min': 592.0, 'Max': 592.0, 'AVG': 592.0, 'Std': 0.0, 'Tot size': 592.0, 'IAT': 83698395.1261286, 'Number': 9.5, 'Magnitue': 34.409301068170514, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"Mirai-greeth_flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 1.0524625062942503, 'Header_Length': 108.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 1.9023528673021992, 'Srate': 1.9023528673021992, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 2.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83365480.0046159, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.1425552225112915, 'Header_Length': 2322.79, 'Protocol Type': 6.66, 'Duration': 79.77, 'Rate': 493.283635899068, 'Srate': 493.283635899068, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.02, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 30.41, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 973.23, 'Min': 62.4, 'Max': 166.71, 'AVG': 93.9073050384428, 'Std': 35.34702893033298, 'Tot size': 94.41, 'IAT': 83707173.30566938, 'Number': 9.5, 'Magnitue': 13.422816614226148, 'Radius': 48.12290307199652, 'Covariance': 3201.4726322218976, 'Variance': 0.38, 'Weight': 141.55}",
+      "output":"Mirai-udpplain"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0021351695060729, 'Header_Length': 192.52, 'Protocol Type': 16.89, 'Duration': 65.73, 'Rate': 16.883240031949594, 'Srate': 16.883240031949594, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.01, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.01, 'rst_count': 0.02, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 1885.4, 'Min': 156.4, 'Max': 180.72, 'AVG': 177.3948932388561, 'Std': 7.624943986471866, 'Tot size': 180.72, 'IAT': 83007316.82262105, 'Number': 9.5, 'Magnitue': 18.809396417142985, 'Radius': 10.79298722812946, 'Covariance': 328.3251870229355, 'Variance': 0.19, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.2, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 11.243546955964623, 'Srate': 11.243546955964623, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 569.4, 'Min': 54.0, 'Max': 56.4, 'AVG': 54.17597650285731, 'Std': 0.6198492501005944, 'Tot size': 54.2, 'IAT': 83089056.3667647, 'Number': 9.5, 'Magnitue': 10.409167715606532, 'Radius': 0.8781129708262055, 'Covariance': 3.254011273490345, 'Variance': 0.12, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.2231921935081482, 'Header_Length': 61.54, 'Protocol Type': 6.11, 'Duration': 64.64, 'Rate': 9.087881543707208, 'Srate': 9.087881543707208, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.11, 'urg_count': 0.99, 'rst_count': 0.99, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 573.93, 'Min': 54.0, 'Max': 60.93, 'AVG': 54.44495398044508, 'Std': 1.6920725226694393, 'Tot size': 54.77, 'IAT': 83330874.2000474, 'Number': 9.5, 'Magnitue': 10.434347482490564, 'Radius': 2.3987798657005133, 'Covariance': 32.14067963217483, 'Variance': 0.09, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 17.333181255403307, 'Srate': 17.333181255403307, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83075921.33314349, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 75.46, 'Rate': 0.0, 'Srate': 0.0, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83150047.38177104, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 6.745006098747253, 'Header_Length': 108.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.2965156704863796, 'Srate': 0.2965156704863796, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 82943426.93150103, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 1.507148374602833, 'Srate': 1.507148374602833, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83150315.60086782, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0199791288375854, 'Header_Length': 58.56, 'Protocol Type': 6.11, 'Duration': 64.64, 'Rate': 1.627960237080445, 'Srate': 1.627960237080445, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 587.88, 'Min': 54.0, 'Max': 74.88, 'AVG': 56.43337800228667, 'Std': 6.330105487740127, 'Tot size': 55.16, 'IAT': 82943431.1255931, 'Number': 9.5, 'Magnitue': 10.609660028635206, 'Radius': 8.960900809315927, 'Covariance': 236.00988504520384, 'Variance': 0.18, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.0883348965644836, 'Header_Length': 29216.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 7752.316373627837, 'Srate': 7752.316373627837, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83102326.66586986, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.0097984147071838, 'Header_Length': 11833.5, 'Protocol Type': 16.68, 'Duration': 67.82, 'Rate': 24151.398971794617, 'Srate': 24151.398971794617, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 530.0, 'Min': 50.0, 'Max': 55.0, 'AVG': 50.39663554539717, 'Std': 1.3275093673447025, 'Tot size': 50.4, 'IAT': 83011689.3743288, 'Number': 9.5, 'Magnitue': 10.039417064649024, 'Radius': 1.8804092608905096, 'Covariance': 7.235812292508532, 'Variance': 0.25, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 50.09918776875298, 'Srate': 50.09918776875298, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83093981.15431583, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0085134601593017, 'Header_Length': 9025.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 21095.833392751923, 'Srate': 21095.833392751923, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83012428.32223032, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0921695852279663, 'Header_Length': 16692.5, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 4124.115327728588, 'Srate': 4124.115327728588, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83123733.34827891, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 14.328371261707144, 'Srate': 14.328371261707144, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83149624.72287767, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 37.88702754974365, 'Header_Length': 1687747.1, 'Protocol Type': 9.3, 'Duration': 63.5, 'Rate': 34.04822059126229, 'Srate': 34.04822059126229, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 58.6, 'rst_count': 1610.8, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 2733.2, 'Min': 77.0, 'Max': 817.5, 'AVG': 356.40694444444443, 'Std': 332.1224511284093, 'Tot size': 817.5, 'IAT': 0.00523521900177, 'Number': 5.5, 'Magnitue': 24.33335522248537, 'Radius': 469.692074754392, 'Covariance': 209236.1924608686, 'Variance': 0.9, 'Weight': 38.5}",
+      "output":"BenignTraffic"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 81.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 37.23935038435407, 'Srate': 37.23935038435407, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 82925823.77727565, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 4972.500296384112, 'Srate': 4972.500296384112, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83128576.45992081, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 53.46, 'Protocol Type': 5.94, 'Duration': 63.36, 'Rate': 0.3293883245092698, 'Srate': 0.3293883245092698, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 568.02, 'Min': 54.0, 'Max': 55.02, 'AVG': 54.105864379428624, 'Std': 0.2991349781184068, 'Tot size': 54.06, 'IAT': 83068547.05539249, 'Number': 9.5, 'Magnitue': 10.402469445310864, 'Radius': 0.4234948694473756, 'Covariance': 0.5514176472671922, 'Variance': 0.17, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.1992316484451294, 'Header_Length': 755901.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 3244.96575751674, 'Srate': 3244.96575751674, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 119.0, 'rst_count': 646.5, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 363.0, 'Min': 66.0, 'Max': 66.0, 'AVG': 66.0, 'Std': 0.0, 'Tot size': 66.0, 'IAT': 5.507469177246094e-06, 'Number': 5.5, 'Magnitue': 11.489125293076055, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 38.5}",
+      "output":"MITM-ArpSpoofing"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 47.0, 'Duration': 64.0, 'Rate': 3.1184609570071693, 'Srate': 3.1184609570071693, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 6216.0, 'Min': 592.0, 'Max': 592.0, 'AVG': 592.0, 'Std': 0.0, 'Tot size': 592.0, 'IAT': 83676994.77859744, 'Number': 9.5, 'Magnitue': 34.409301068170514, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"Mirai-greeth_flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.9419048261642456, 'Header_Length': 130.68, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 3.044594523936124, 'Srate': 3.044594523936124, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 2.42, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83362094.36063132, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 114.0965697342292, 'Srate': 114.0965697342292, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83072244.96067291, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.1823519015312195, 'Header_Length': 30274.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 5555.451084183421, 'Srate': 5555.451084183421, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83106701.97199416, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 11.652430469702818, 'Srate': 11.652430469702818, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83362640.06355578, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 6.661732513904571, 'Header_Length': 108.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.3002222055700493, 'Srate': 0.3002222055700493, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 82943426.94649205, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 16.827800367905922, 'Srate': 16.827800367905922, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83128033.40459049, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 0.99, 'Duration': 63.36, 'Rate': 6.544965758453344, 'Srate': 6.544965758453344, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.18, 'Min': 42.0, 'Max': 42.18, 'AVG': 42.00899999999999, 'Std': 0.039230090491866, 'Tot size': 42.18, 'IAT': 83149812.24425967, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 20.43609432859092, 'Srate': 20.43609432859092, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83348228.76138479, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 60.87311907858072, 'Srate': 60.87311907858072, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83331101.6992342, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 24.20743868669107, 'Srate': 24.20743868669107, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83344976.8403061, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.1063480114936828, 'Header_Length': 38217.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 8857.995580627752, 'Srate': 8857.995580627752, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83102400.47979435, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 2.104608205952047, 'Srate': 2.104608205952047, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83349321.34152867, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 1.0766980060453983, 'Srate': 1.0766980060453983, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83330936.88698018, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0176710081100463, 'Header_Length': 5565.41, 'Protocol Type': 15.61, 'Duration': 81.75, 'Rate': 9027.058914770876, 'Srate': 9027.058914770876, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.01, 'rst_count': 0.01, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 551.37, 'Min': 50.0, 'Max': 64.87, 'AVG': 51.49378749767604, 'Std': 3.620237010385615, 'Tot size': 58.51, 'IAT': 83123585.26645863, 'Number': 9.5, 'Magnitue': 10.135101290390445, 'Radius': 5.165004022293656, 'Covariance': 400.663985948697, 'Variance': 0.11, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 7.053139719963074, 'Header_Length': 108.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.2835616764781519, 'Srate': 0.2835616764781519, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 2.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 82981049.18326108, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-SYN_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 32.39657829184932, 'Srate': 32.39657829184932, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83344977.33805837, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 2.5299851862731715, 'Srate': 2.5299851862731715, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83330936.62691918, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 123.04, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 12.615112073567786, 'Srate': 12.615112073567786, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.73, 'fin_count': 0.27, 'urg_count': 0.0, 'rst_count': 0.16, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 1310.8, 'Min': 84.16, 'Max': 165.76, 'AVG': 123.21539086231964, 'Std': 38.99788647941955, 'Tot size': 123.04, 'IAT': 83089437.89771925, 'Number': 9.5, 'Magnitue': 15.534241254828622, 'Radius': 55.14541412098596, 'Covariance': 2236.9018058647243, 'Variance': 0.71, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 0.99, 'Duration': 72.91, 'Rate': 3.081850484997457, 'Srate': 3.081850484997457, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 442.44, 'Min': 42.0, 'Max': 43.44, 'AVG': 42.08901521620793, 'Std': 0.3458000490284341, 'Tot size': 42.18, 'IAT': 83128755.47445206, 'Number': 9.5, 'Magnitue': 9.17485013497963, 'Radius': 0.4903974984417296, 'Covariance': 1.508880536485857, 'Variance': 0.08, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 12.389720825472896, 'Srate': 12.389720825472896, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 82980870.53658564, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-SYN_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.001204068660736, 'Header_Length': 55.12, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 18.82108439848984, 'Srate': 18.82108439848984, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.01, 'fin_count': 0.01, 'urg_count': 0.0, 'rst_count': 0.01, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.32, 'Min': 54.0, 'Max': 54.32, 'AVG': 54.01978115915732, 'Std': 0.0768444553396519, 'Tot size': 54.04, 'IAT': 83090046.44495627, 'Number': 9.5, 'Magnitue': 10.394216180462802, 'Radius': 0.1089772218759399, 'Covariance': 0.0745126190857213, 'Variance': 0.08, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 0.8008418349385842, 'Srate': 0.8008418349385842, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83149998.09493424, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0634535455703735, 'Header_Length': 25479.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 8034.747370571047, 'Srate': 8034.747370571047, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83123582.60592309, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 24.0095710761164, 'Srate': 24.0095710761164, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 1.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83089242.1717683, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.143940966129303, 'Header_Length': 32324.5, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 5398.429352556862, 'Srate': 5398.429352556862, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83098539.87444833, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 1.2108024968898576, 'Srate': 1.2108024968898576, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83128823.93501817, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 48.27238430976868, 'Header_Length': 128041.4, 'Protocol Type': 10.4, 'Duration': 97.8, 'Rate': 39966.18403503428, 'Srate': 39966.18403503428, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.4, 'fin_count': 0.0, 'urg_count': 312.5, 'rst_count': 677.1, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 10171.8, 'Min': 55.6, 'Max': 1566.4, 'AVG': 661.3184810141698, 'Std': 694.9070699487021, 'Tot size': 636.4, 'IAT': 166520013.9845979, 'Number': 13.5, 'Magnitue': 36.39328931681961, 'Radius': 983.968334632472, 'Covariance': 484212.32417557744, 'Variance': 1.0, 'Weight': 244.6}",
+      "output":"BenignTraffic"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0003020501136779, 'Header_Length': 745.01, 'Protocol Type': 6.16, 'Duration': 65.91, 'Rate': 66.66932317213384, 'Srate': 66.66932317213384, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.49, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 9716.92, 'Min': 330.13, 'Max': 1479.8, 'AVG': 927.1756029274734, 'Std': 538.4419292175993, 'Tot size': 923.92, 'IAT': 83335506.16085345, 'Number': 9.5, 'Magnitue': 42.88464582111977, 'Radius': 761.3484897671942, 'Covariance': 308670.8216897838, 'Variance': 0.94, 'Weight': 141.55}",
+      "output":"DDoS-ACK_Fragmentation"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 2.3, 'Protocol Type': 1.15, 'Duration': 65.27, 'Rate': 70.05899189703901, 'Srate': 70.05899189703901, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 467.96, 'Min': 42.0, 'Max': 66.62, 'AVG': 44.09577226514456, 'Std': 6.486488618417168, 'Tot size': 44.06, 'IAT': 83153707.44345422, 'Number': 9.5, 'Magnitue': 9.375082103720832, 'Radius': 9.18733668114961, 'Covariance': 323.84061186839733, 'Variance': 0.14, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.1529867696762085, 'Header_Length': 17635.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 3601.595667037666, 'Srate': 3601.595667037666, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83106187.94950844, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-UDP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 79.38, 'Protocol Type': 5.88, 'Duration': 62.72, 'Rate': 9.872114310515512, 'Srate': 9.872114310515512, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.3, 'Min': 54.0, 'Max': 54.18, 'AVG': 54.01564912280702, 'Std': 0.050157217718237, 'Tot size': 54.12, 'IAT': 82925790.67760833, 'Number': 9.5, 'Magnitue': 10.393837042965565, 'Radius': 0.0715178405344793, 'Covariance': 0.0867005232379193, 'Variance': 0.03, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 71.87812109060371, 'Srate': 71.87812109060371, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83067439.8794218, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 926.7132125497126, 'Srate': 926.7132125497126, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83348625.28723231, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 162.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 25.336337551723105, 'Srate': 25.336337551723105, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 1701.0, 'Min': 162.0, 'Max': 162.0, 'AVG': 162.0, 'Std': 0.0, 'Tot size': 162.0, 'IAT': 83008107.34534255, 'Number': 9.5, 'Magnitue': 18.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 2.982356381399664, 'Srate': 2.982356381399664, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83124530.91842318, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 7.398340168452617, 'Srate': 7.398340168452617, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83313727.32855128, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 3.585884318300684, 'Srate': 3.585884318300684, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83313810.6039179, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 34.46706472665836, 'Srate': 34.46706472665836, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83349144.64562021, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0868041062355041, 'Header_Length': 20793.44, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 5429.283758027595, 'Srate': 5429.283758027595, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 536.76, 'Min': 50.0, 'Max': 61.76, 'AVG': 50.63801135190918, 'Std': 2.662456258212525, 'Tot size': 52.94, 'IAT': 83016348.40380816, 'Number': 9.5, 'Magnitue': 10.06005766050296, 'Radius': 3.787533943784416, 'Covariance': 179.40262814962497, 'Variance': 0.04, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 55.52, 'Protocol Type': 6.0, 'Duration': 65.69, 'Rate': 295.11373790677226, 'Srate': 295.11373790677226, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.99, 'fin_count': 0.0, 'urg_count': 0.01, 'rst_count': 0.01, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 583.72, 'Min': 54.0, 'Max': 70.72, 'AVG': 55.168532532826646, 'Std': 4.233164386362939, 'Tot size': 55.52, 'IAT': 83362223.93745132, 'Number': 9.5, 'Magnitue': 10.49985395786734, 'Radius': 5.998103022723607, 'Covariance': 165.13292572470354, 'Variance': 0.11, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 3.689854114055633, 'Header_Length': 1999693.34, 'Protocol Type': 16.83, 'Duration': 64.0, 'Rate': 967.3635591115652, 'Srate': 967.3635591115652, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 5644.2, 'Min': 381.2, 'Max': 554.0, 'AVG': 533.8616992914207, 'Std': 52.387079898538985, 'Tot size': 544.4, 'IAT': 83759012.77543099, 'Number': 9.5, 'Magnitue': 32.65680405111514, 'Radius': 74.1591791115801, 'Covariance': 8089.021321623636, 'Variance': 0.36, 'Weight': 141.55}",
+      "output":"Mirai-udpplain"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 5.574181476027703, 'Srate': 5.574181476027703, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83127777.76101387, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 48.09566280841828, 'Header_Length': 101026.4, 'Protocol Type': 8.8, 'Duration': 137.7, 'Rate': 13.947935170475787, 'Srate': 13.947935170475787, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.8, 'fin_count': 0.0, 'urg_count': 137.9, 'rst_count': 334.7, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 6720.3, 'Min': 156.0, 'Max': 3922.9, 'AVG': 1177.51123015873, 'Std': 1302.1171896202527, 'Tot size': 919.3, 'IAT': 0.027245807647705, 'Number': 5.5, 'Magnitue': 47.2141704766706, 'Radius': 1841.4717893601005, 'Covariance': 2063959.1357375127, 'Variance': 0.9, 'Weight': 38.5}",
+      "output":"BenignTraffic"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 163.47919630502997, 'Srate': 163.47919630502997, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83123999.44968893, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 6.26977043151998, 'Srate': 6.26977043151998, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83068281.05285946, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0015684700012207, 'Header_Length': 55.66, 'Protocol Type': 5.94, 'Duration': 65.1, 'Rate': 13.83471333025756, 'Srate': 13.83471333025756, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.98, 'fin_count': 0.0, 'urg_count': 0.02, 'rst_count': 0.03, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 569.46, 'Min': 54.0, 'Max': 56.46, 'AVG': 54.16051836733957, 'Std': 0.6029119966985317, 'Tot size': 54.3, 'IAT': 83361295.92788535, 'Number': 9.5, 'Magnitue': 10.407748540502393, 'Radius': 0.8549169547092348, 'Covariance': 2.605696218859862, 'Variance': 0.2, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 11.096923036219804, 'Srate': 11.096923036219804, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83076118.73158188, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 2.814847090244293, 'Header_Length': 160.38, 'Protocol Type': 5.94, 'Duration': 63.36, 'Rate': 1.0551355000858025, 'Srate': 1.0551355000858025, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 2.97, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 568.08, 'Min': 54.0, 'Max': 55.08, 'AVG': 54.12586437942862, 'Std': 0.3274192493658687, 'Tot size': 54.06, 'IAT': 83361307.93536718, 'Number': 9.5, 'Magnitue': 10.40437644929932, 'Radius': 0.4634948694473756, 'Covariance': 0.6314176472671922, 'Variance': 0.18, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 2.334499521255493, 'Header_Length': 1092305.45, 'Protocol Type': 16.84, 'Duration': 72.79, 'Rate': 799.009103717468, 'Srate': 799.009103717468, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 5478.28, 'Min': 455.04, 'Max': 554.0, 'AVG': 526.3501558472058, 'Std': 39.36200181887124, 'Tot size': 526.65, 'IAT': 83759393.00787424, 'Number': 9.5, 'Magnitue': 32.37635597068868, 'Radius': 55.7496569641751, 'Covariance': 7805.97247598217, 'Variance': 0.21, 'Weight': 141.55}",
+      "output":"Mirai-udpplain"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 31.70947603271352, 'Srate': 31.70947603271352, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83075976.37273328, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 46.34240715503692, 'Header_Length': 1301464.8, 'Protocol Type': 4.8, 'Duration': 168.3, 'Rate': 34.223130203865274, 'Srate': 34.223130203865274, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.2, 'fin_count': 0.0, 'urg_count': 58.8, 'rst_count': 1243.2, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 361.2, 'Min': 64.8, 'Max': 66.0, 'AVG': 65.81333333333333, 'Std': 0.4285618083164128, 'Tot size': 64.8, 'IAT': 0.0380495071411132, 'Number': 5.5, 'Magnitue': 11.47281540542028, 'Radius': 0.6060779216362094, 'Covariance': 0.9315555555555556, 'Variance': 0.2, 'Weight': 38.5}",
+      "output":"BenignTraffic"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.5689048872811727, 'Srate': 0.5689048872811727, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83072370.75591238, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0007693099975585, 'Header_Length': 55.68, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 47.44874101581574, 'Srate': 47.44874101581574, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.02, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.01, 'rst_count': 0.03, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 568.56, 'Min': 54.0, 'Max': 55.56, 'AVG': 54.12058590171439, 'Std': 0.4115958197263256, 'Tot size': 54.12, 'IAT': 82955885.3164337, 'Number': 9.5, 'Magnitue': 10.403884862128972, 'Radius': 0.5829926432973324, 'Covariance': 1.3289440584565242, 'Variance': 0.13, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 17.193223229255054, 'Srate': 17.193223229255054, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 1.0, 'rst_count': 1.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83331863.69713613, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Based on the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 2.4683227410952027, 'Srate': 2.4683227410952027, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83093975.98466152, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 2.9184506940841675, 'Header_Length': 108.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 0.6852958812884412, 'Srate': 0.6852958812884412, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 2.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83362147.64764792, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 55.64, 'Protocol Type': 6.11, 'Duration': 63.37, 'Rate': 0.5233367700034226, 'Srate': 0.5233367700034226, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 1.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.99, 'rst_count': 0.99, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 580.12, 'Min': 54.0, 'Max': 67.12, 'AVG': 54.81102752545013, 'Std': 3.1506226689257324, 'Tot size': 55.64, 'IAT': 83314550.54452282, 'Number': 9.5, 'Magnitue': 10.467320697874593, 'Radius': 4.468066096913537, 'Covariance': 125.25571268309756, 'Variance': 0.08, 'Weight': 141.55}",
+      "output":"DDoS-PSHACK_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 2.8016122686672107, 'Srate': 2.8016122686672107, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83348614.38100678, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 88.80775008201599, 'Header_Length': 5290348.6, 'Protocol Type': 7.1, 'Duration': 63.6, 'Rate': 61.44383086699851, 'Srate': 61.44383086699851, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 1.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.6, 'fin_count': 0.0, 'urg_count': 250.3, 'rst_count': 5158.3, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 7898.4, 'Min': 1227.3, 'Max': 1514.0, 'AVG': 1469.5633333333333, 'Std': 101.93853427440038, 'Tot size': 1227.3, 'IAT': 0.0018333911895751, 'Number': 5.5, 'Magnitue': 54.18453143264579, 'Radius': 144.1628576992916, 'Covariance': 52769.98322222223, 'Variance': 0.2, 'Weight': 38.5}",
+      "output":"BenignTraffic"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.58, 'Protocol Type': 46.59, 'Duration': 65.91, 'Rate': 0.0, 'Srate': 0.0, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.01, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 6135.9, 'Min': 511.9, 'Max': 592.0, 'AVG': 584.9810702308528, 'Std': 22.17472522443375, 'Tot size': 586.66, 'IAT': 83702743.73263302, 'Number': 9.5, 'Magnitue': 34.200001657654475, 'Radius': 31.40021440497195, 'Covariance': 3376.8620840034296, 'Variance': 0.15, 'Weight': 141.55}",
+      "output":"Mirai-greeth_flood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.1102955508232116, 'Header_Length': 6.66, 'Protocol Type': 1.37, 'Duration': 67.82, 'Rate': 0.3876736445879994, 'Srate': 0.3876736445879994, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.01, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 460.31, 'Min': 42.0, 'Max': 51.1, 'AVG': 43.522207835937714, 'Std': 3.22765218731406, 'Tot size': 43.46, 'IAT': 83128694.1310697, 'Number': 9.5, 'Magnitue': 9.32159375583277, 'Radius': 4.570727168093379, 'Covariance': 75.47731873600056, 'Variance': 0.14, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 26.206842133920315, 'Srate': 26.206842133920315, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83345129.05508444, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Based on the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 13.736908469824554, 'Srate': 13.736908469824554, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83093109.75143532, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SYN_Flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.25835777759552, 'Header_Length': 72.36, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 2.681958526572298, 'Srate': 2.681958526572298, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 1.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 1.34, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83365671.20428509, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-SynonymousIP_Flood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0070366787910461, 'Header_Length': 10875.0, 'Protocol Type': 17.0, 'Duration': 64.0, 'Rate': 31003.08886270041, 'Srate': 31003.08886270041, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 1.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 525.0, 'Min': 50.0, 'Max': 50.0, 'AVG': 50.0, 'Std': 0.0, 'Tot size': 50.0, 'IAT': 83028632.28032635, 'Number': 9.5, 'Magnitue': 10.0, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DoS-UDP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0015109181404113, 'Header_Length': 2.0, 'Protocol Type': 45.76, 'Duration': 62.56, 'Rate': 18.57306688164728, 'Srate': 18.57306688164728, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 6001.7, 'Min': 510.7, 'Max': 592.0, 'AVG': 574.6800788840502, 'Std': 32.74300290803752, 'Tot size': 575.94, 'IAT': 83693904.4163214, 'Number': 9.5, 'Magnitue': 33.87573319207036, 'Radius': 46.36291967195757, 'Covariance': 7206.8865944017725, 'Variance': 0.15, 'Weight': 141.55}",
+      "output":"Mirai-greeth_flood"
+   },
+   {
+      "instruction":"Analyze the network features and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 3.9154651296577097, 'Srate': 3.9154651296577097, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 1.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83076368.75823063, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 7.942958424091339, 'Header_Length': 108.18, 'Protocol Type': 6.11, 'Duration': 65.91, 'Rate': 0.2494348059419848, 'Srate': 0.2494348059419848, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.01, 'urg_count': 0.0, 'rst_count': 0.01, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 570.24, 'Min': 54.0, 'Max': 57.24, 'AVG': 54.20803043241588, 'Std': 0.7910988417675299, 'Tot size': 54.36, 'IAT': 82943163.70619872, 'Number': 9.5, 'Magnitue': 10.412196908011342, 'Radius': 1.1215074696781622, 'Covariance': 7.025522145943428, 'Variance': 0.09, 'Weight': 141.55}",
+      "output":"DoS-TCP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 7.509285666969236, 'Srate': 7.509285666969236, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83344068.60824457, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 24.492986952619383, 'Srate': 24.492986952619383, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83123992.20236064, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, predict the type of traffic.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 56.45, 'Protocol Type': 6.11, 'Duration': 64.0, 'Rate': 2.939548096510737, 'Srate': 2.939548096510737, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.99, 'syn_count': 0.0, 'fin_count': 0.99, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 598.85, 'Min': 54.0, 'Max': 85.85, 'AVG': 56.46196216000202, 'Std': 8.403414652745814, 'Tot size': 56.45, 'IAT': 83344543.29497543, 'Number': 9.5, 'Magnitue': 10.610880484414254, 'Radius': 11.90276646732054, 'Covariance': 553.9574104781448, 'Variance': 0.13, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 0.0, 'Protocol Type': 1.0, 'Duration': 64.0, 'Rate': 0.0, 'Srate': 0.0, 'Drate': 0.0, 'fin_flag_number': 0.0, 'syn_flag_number': 0.0, 'rst_flag_number': 0.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 0.0, 'syn_count': 0.0, 'fin_count': 0.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 0.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 1.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 441.0, 'Min': 42.0, 'Max': 42.0, 'AVG': 42.0, 'Std': 0.0, 'Tot size': 42.0, 'IAT': 83150192.51004027, 'Number': 9.5, 'Magnitue': 9.16515138991168, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-ICMP_Flood"
+   },
+   {
+      "instruction":"Given the network features, classify the traffic type.",
+      "input":"{'flow_duration': 0.0, 'Header_Length': 54.0, 'Protocol Type': 6.0, 'Duration': 64.0, 'Rate': 1.116105339721939, 'Srate': 1.116105339721939, 'Drate': 0.0, 'fin_flag_number': 1.0, 'syn_flag_number': 0.0, 'rst_flag_number': 1.0, 'psh_flag_number': 0.0, 'ack_flag_number': 0.0, 'ece_flag_number': 0.0, 'cwr_flag_number': 0.0, 'ack_count': 1.0, 'syn_count': 0.0, 'fin_count': 1.0, 'urg_count': 0.0, 'rst_count': 0.0, 'HTTP': 0.0, 'HTTPS': 0.0, 'DNS': 0.0, 'Telnet': 0.0, 'SMTP': 0.0, 'SSH': 0.0, 'IRC': 0.0, 'TCP': 1.0, 'UDP': 0.0, 'DHCP': 0.0, 'ARP': 0.0, 'ICMP': 0.0, 'IPv': 1.0, 'LLC': 1.0, 'Tot sum': 567.0, 'Min': 54.0, 'Max': 54.0, 'AVG': 54.0, 'Std': 0.0, 'Tot size': 54.0, 'IAT': 83343897.6568375, 'Number': 9.5, 'Magnitue': 10.392304845413264, 'Radius': 0.0, 'Covariance': 0.0, 'Variance': 0.0, 'Weight': 141.55}",
+      "output":"DDoS-RSTFINFlood"
+   },
+   {
+      "instruction":"物聯網的三層架構不包括以下哪一項？",
+      "input":"A) 感測層\nB) 平台層\nC) 網路層\nD) 應用層",
+      "output":"B) 平台層"
+   },
+   {
+      "instruction":"物聯網 (IoT) 可以應用於以下哪些領域？請選出正確的答案：",
+      "input":"A) 智慧家庭，例如遠端控制燈光與溫度。\nB) 智慧農業，例如使用感測器監控土壤濕度與氣候條件。\nC) 工業物聯網，例如利用機器學習分析生產線效率。\nD) 智慧醫療，例如穿戴式設備追蹤心率和血壓數據。\nE) 以上皆是。",
+      "output":"E) 以上皆是"
+   },
+   {
+      "instruction":"Mirai 病毒是針對哪一類設備進行攻擊的？",
+      "input":"A) 電腦伺服器\nB) 網路攝影機與路由器\nC) 手機應用程式\nD) 雲端存儲服務",
+      "output":"B) 網路攝影機與路由器"
+   },
+   {
+      "instruction":"以下哪一項是 RESTful API 的常見 HTTP 方法？",
+      "input":"A) SELECT\nB) UPDATE\nC) POST\nD) RENAME",
+      "output":"C) POST"
+   },
+   {
+      "instruction":"當 IoT 系統需要處理大量即時數據時，以下哪種架構最合適？",
+      "input":"A) 使用雲端伺服器進行所有數據處理\nB) 使用邊緣運算處理本地數據，並同步重要數據到雲端\nC) 僅使用 GPU 進行計算\nD) 使用 JSON 存儲所有數據",
+      "output":"B) 使用邊緣運算處理本地數據，並同步重要數據到雲端"
+   },
+   {
+      "instruction":"TLS 握手中，使用哪種方法來驗證伺服器身份？",
+      "input":"A) MAC（消息驗證碼）\nB) TLS 憑證（Certificate）\nC) AES 對稱加密\nD) GPU 運算驗證",
+      "output":"B) TLS 憑證（Certificate）"
+   },
+   {
+      "instruction":"以下哪一項描述混合加密的特性是正確的？",
+      "input":"A) 同時使用對稱加密和非對稱加密技術\nB) 僅使用非對稱加密進行數據加密\nC) 使用 JSON 格式進行數據加密\nD) 僅在物聯網設備中實現",
+      "output":"A) 同時使用對稱加密和非對稱加密技術"
+   },
+   {
+      "instruction":"以下哪一種是網路中用於將私有 IP 轉換為公共 IP 的技術？",
+      "input":"A) ARP\nB) NAT\nC) ICMP\nD) MAC",
+      "output":"B) NAT"
+   },
+   {
+      "instruction":"下列哪一種協議通常被視為 Telnet 的安全替代品？",
+      "input":"A) FTP\nB) HTTPS\nC) SSH\nD) ICMP",
+      "output":"C) SSH"
+   },
+   {
+      "instruction":"以下哪一項是 DNS 的主要功能？",
+      "input":"A) 將 IP 地址轉換為 MAC 地址\nB) 確定數據封包的傳輸順序\nC) 將域名解析為 IP 地址\nD) 監測網路延遲時間",
+      "output":"C) 將域名解析為 IP 地址"
+   },
+   {
+      "instruction":"TCP 和 UDP 協議的主要應用場景分別是什麼？",
+      "input":"A) TCP 用於視訊串流，UDP 用於文件下載\nB) TCP 用於可靠數據傳輸，UDP 用於即時通訊\nC) TCP 用於加密數據傳輸，UDP 用於非加密數據傳輸\nD) TCP 用於無線通訊，UDP 用於有線通訊",
+      "output":"B) TCP 用於可靠數據傳輸，UDP 用於即時通訊"
+   },
+   {
+      "instruction":"對稱加密與非對稱加密的主要區別是什麼？",
+      "input":"A) 對稱加密使用兩個密鑰，非對稱加密使用單一密鑰。\nB) 對稱加密速度較快，非對稱加密更安全。\nC) 對稱加密不適用於大數據加密。\nD) 非對稱加密只能用於文件存儲。",
+      "output":"B) 對稱加密速度較快，非對稱加密更安全。"
+   },
+   {
+      "instruction":"數位簽章提供以下哪一項功能？",
+      "input":"A) 保證系統可用性\nB) 確保數據的完整性與身份驗證\nC) 減少加密計算資源\nD) 保護網絡流量不被攔截",
+      "output":"B) 確保數據的完整性與身份驗證"
+   },
+   {
+      "instruction":"防火牆的主要功能是什麼？",
+      "input":"A) 提供資料加密\nB) 儲存密鑰\nC) 驗證數位簽章\nD) 控制進出網路的流量",
+      "output":"D) 控制進出網路的流量"
+   },
+   {
+      "instruction":"以下哪一項是目前最常用的對稱加密算法？",
+      "input":"A) DES\nB) RSA\nC) AES\nD) ECC",
+      "output":"C) AES"
+   },
+   {
+      "instruction":"在存取控制中，AAA 模型中的 A 不包括以下哪一項？",
+      "input":"A) Authentication（驗證）\nB) Authorization（授權）\nC) Accessibility（可存取性）\nD) Accounting（記錄與審計）",
+      "output":"C) Accessibility（可存取性）"
+   },
+   {
+      "instruction":"RSA 的安全性依賴於哪一種數學問題？",
+      "input":"A) 質數分解的困難性\nB) 離散對數問題\nC) 雜湊碰撞抗性\nD) 對稱密鑰的長度",
+      "output":"A) 質數分解的困難性"
+   },
+   {
+      "instruction":"以下哪一項攻擊會將受害者引導到惡意網站？",
+      "input":"A) ARP 欺騙\nB) DNS 欺騙\nC) SQL 注入\nD) XSS 攻擊",
+      "output":"B) DNS 欺騙"
+   },
+   {
+      "instruction":"對 DDoS 攻擊，以下哪一種防禦方式最有效？",
+      "input":"A) 增加網路頻寬\nB) 使用靜態 ARP 表\nC) 使用流量限制與負載平衡\nD) 啟用 SameSite Cookie",
+      "output":"C) 使用流量限制與負載平衡"
+   },
+   {
+      "instruction":"無線竊聽的主要攻擊對象是什麼？",
+      "input":"A) 有線網路的封包數據\nB) 未加密的無線通訊數據\nC) 受保護的 HTTPS 網頁流量\nD) DNS 查詢結果",
+      "output":"B) 未加密的無線通訊數據"
+   },
+   {
+      "instruction":"CSRF 攻擊的主要風險是什麼？",
+      "input":"A) 攻擊者攔截流量並篡改內容\nB) 攻擊者竊取憑證以執行未授權操作\nC) 攻擊者誘使受害者在未授權的情況下執行操作\nD) 攻擊者發送大量流量使服務癱瘓",
+      "output":"C) 攻擊者誘使受害者在未授權的情況下執行操作"
+   },
+   {
+      "instruction":"API 攻擊主要利用哪一項協定進行？",
+      "input":"A) ARP\nB) HTTP\nC) DNS\nD) MQTT",
+      "output":"B) HTTP"
+   },
+   {
+      "instruction":"重播攻擊的防禦方式包括以下哪一項？",
+      "input":"A) 使用 CSRF tokens\nB) 使用時間戳驗證訊息有效性\nC) 啟用 HTTPS\nD) 啟用流量負載平衡",
+      "output":"B) 使用時間戳驗證訊息有效性"
+   },
+   {
+      "instruction":"在 Linux 中，哪個指令可以用於生成一個 256 位的 AES 金鑰？",
+      "input":"A) openssl genpkey -aes256\nB) openssl rand -base64 32 > aes_key\nC) openssl enc -aes-256-cbc\nD) openssl dgst -aes-256",
+      "output":"B) openssl rand -base64 32 > aes_key"
+   },
+   {
+      "instruction":"當使用 AES 加密文件時，選項 -salt 的作用是什麼？",
+      "input":"A) 壓縮文件大小\nB) 增加加密的隨機性，防止字典攻擊\nC) 提高加密速度\nD) 減少文件加密的資源需求",
+      "output":"B) 增加加密的隨機性，防止字典攻擊"
+   },
+   {
+      "instruction":"使用 RSA 公鑰加密文件的正確指令是什麼？",
+      "input":"A) openssl pkeyutl -encrypt -in input.txt -inkeypem -  pubin -out encrypted.txt\nB) openssl rsa -encrypt -input input.txt -key public_key.pem - output encrypted.txt\nC) openssl rand -encrypt -key public_key.pem -in input.txt >  txt\nD) openssl genpkey -in input.txt -pubkeypem >  encrypted.txt",
+      "output":"A) openssl pkeyutl -encrypt -in input.txt -inkeypem -  pubin -out encrypted.txt"
+   },
+   {
+      "instruction":"以下哪一項是 HTTPS 安裝中常見的錯誤，且需要手動修復？",
+      "input":"A) 憑證與私鑰路徑配置錯誤\nB) Apache 模組未安裝\nC) HTTPS 埠號（443）被防火牆阻擋\nD) 以上皆是",
+      "output":"D) 以上皆是"
+   },
+   {
+      "instruction":"DHCP 的主要功能是什麼？",
+      "input":"A) 分配 IP 地址\nB) 加密數據\nC) 建立 VPN 連線\nC) 管理網路頻寬",
+      "output":"A) 分配 IP 地址"
+   },
+   {
+      "instruction":"下列哪一個屬於 Public IP 地址的範例？",
+      "input":"A) 10.0.0.1\nB) 172.16.0.1\nC) 192.168.0.1\nD) 1.2.3.4",
+      "output":"D)"
+   },
+   {
+      "instruction":"如何使用 Port Forwarding 設定內部伺服器供外部訪問？",
+      "input":"A) 設置伺服器的公有 IP 地址\nB) 開啟伺服器的 DHCP 功能\nC) 設定路由器的轉發規則\nD) 更改伺服器的子網路遮罩",
+      "output":"C) 設定路由器的轉發規則"
+   },
+   {
+      "instruction":"MQTT 的 Topic 設計中，# 通配符的作用是什麼？",
+      "input":"A) 匹配當前層級的所有主題\nB) 匹配單層的任意主題\nC) 匹配所有子層級及以下主題\nD) 僅匹配特定的感測器數據",
+      "output":"C) 匹配所有子層級及以下主題"
+   },
+   {
+      "instruction":"CIA 鐵三角中的 \"A\" 代表什麼？",
+      "input":"A) Authentication\nB) Authorization\nC) Availability\nD) Access Control",
+      "output":"C) Availability"
+   },
+   {
+      "instruction":"以下哪一個是當前最常用的對稱加密演算法？",
+      "input":"A) DES\nB) 3DES\nC) AES\nD) ECC",
+      "output":"C) AES"
+   },
+   {
+      "instruction":"公開金鑰加密技術的主要優勢是什麼？",
+      "input":"A) 加密速度快\nB) 解決了密鑰分發問題\nC) 不需要使用密鑰\nD) 能加密任意大小的數據",
+      "output":"B) 解決了密鑰分發問題"
+   },
+   {
+      "instruction":"數位簽章的三大主要功能不包括以下哪一項？",
+      "input":"A) 身份驗證\nB) 數據完整性\nC) 不可否認性\nD) 資料壓縮",
+      "output":"D) 資料壓縮"
+   },
+   {
+      "instruction":"以下哪一項不是防火牆的主要功能？",
+      "input":"A) 控制進出網絡的流量\nB) 檢查並阻止惡意流量\nC) 執行數據加密\nD) 記錄網路活動日誌",
+      "output":"C) 執行數據加密"
+   },
+   {
+      "instruction":"入侵偵測系統 (IDS) 的主要功能是什麼？",
+      "input":"A) 主動阻止網路攻擊\nB) 監控並檢測可疑行為或潛在攻擊\nC) 加密網絡流量\nD) 掃描網絡中的漏洞",
+      "output":"B) 監控並檢測可疑行為或潛在攻擊"
+   },
+   {
+      "instruction":"中間人攻擊 (MITM) 主要違反了資訊安全的哪兩個 CIA 原則？",
+      "input":"A) 機密性 (Confidentiality) 和 完整性 (Integrity)\nB) 可用性 (Availability) 和 完整性 (Integrity)\nC) 機密性 (Confidentiality) 和 可用性 (Availability)\nD) 授權性 (Authorization) 和 認證性 (Authentication)",
+      "output":"A) 機密性 (Confidentiality) 和 完整性 (Integrity)"
+   },
+   {
+      "instruction":"ARP 欺騙攻擊的主要目的是什麼？",
+      "input":"A) 攔截並修改無線通信流量\nB) 將攻擊者的 MAC 地址與合法 IP 地址相關聯，進行流量攔截\nC) 偽造 DNS 回應，將流量引導至惡意網站\nD) 透過過多的請求癱瘓服務",
+      "output":"B) 將攻擊者的 MAC 地址與合法 IP 地址相關聯，進行流量攔截"
+   },
+   {
+      "instruction":"DDoS 攻擊違反了 CIA 中的哪一項？",
+      "input":"A) 機密性 (Confidentiality)\nB) 完整性 (Integrity)\nC) 可用性 (Availability)\nD) 認證性 (Authentication)",
+      "output":"C) 可用性 (Availability)"
+   },
+   {
+      "instruction":"暴力破解攻擊是透過哪種方式進行的？",
+      "input":"A) 偽造 ARP 回應以攔截通信\nB) 不斷嘗試所有可能的密碼組合直到破解成功\nC) 攔截封包並重播以進行未授權存取\nD) 將惡意軟體注入設備控制系統",
+      "output":"B) 不斷嘗試所有可能的密碼組合直到破解成功"
+   },
+   {
+      "instruction":"防止無線竊聽的有效措施是什麼？",
+      "input":"A) 使用靜態 ARP 表\nB) 啟用 WPA3 加密\nC) 使用隨機數或時間戳驗證\nD) 啟用多因素驗證 (MFA)",
+      "output":"B) 啟用 WPA3 加密"
+   },
+   {
+      "instruction":"在 RSA 加解密過程中，私鑰的主要用途是什麼？",
+      "input":"A) 加密數據\nB) 驗證數位簽章\nC) 解密數據\nD) 生成數位簽章",
+      "output":"C) 解密數據"
+   },
+   {
+      "instruction":"下列哪一項是數位簽章的主要功能之一？",
+      "input":"A) 確保數據傳輸速度\nB) 確保數據未經篡改\nC) 提供數據壓縮\nD) 改變加密方式",
+      "output":"B) 確保數據未經篡改"
+   },
+   {
+      "instruction":"DHCP 的主要功能是什麼？",
+      "input":"A) 提供網路加密\nB) 自動分配 IP 地址及相關網路參數\nC) 提供用戶驗證\nD) 儲存網路流量數據",
+      "output":"B) 自動分配 IP 地址及相關網路參數"
+   },
+   {
+      "instruction":"子網路遮罩的作用是什麼？",
+      "input":"A) 劃分 IP 地址的網路部分和主機部分\nB) 確保數據傳輸加密\nC) 動態分配 IP 地址\nD) 設置無線網絡的安全性",
+      "output":"A) 劃分 IP 地址的網路部分和主機部分"
+   },
+   {
+      "instruction":"下列哪一項關於私有 IP 地址的描述是正確的？",
+      "input":"A) 私有 IP 地址可以直接在網際網路上使用\nB) 私有 IP 地址通常由路由器分配\nC) 私有 IP 地址需要向 ISP 申請\nD) 私有 IP 地址全球唯一",
+      "output":"B) 私有 IP 地址通常由路由器分配"
+   },
+   {
+      "instruction":"Port Forwarding 的主要用途是什麼？",
+      "input":"A) 為內部網路設備分配動態 IP 地址\nB) 允許外部網絡設備通過路由器訪問內部網絡中的特定設備\nC) 增強網路安全性\nD) 過濾網路流量",
+      "output":"B) 允許外部網絡設備通過路由器訪問內部網絡中的特定設備"
+   },
+   {
+      "instruction":"MQTT 是基於哪種模型的通信協議？",
+      "input":"A) 請求/回應模型\nB) 發布/訂閱模型\nC) 客戶端/伺服器模型\nD) 點對點模型",
+      "output":"B) 發布/訂閱模型"
+   },
+   {
+      "instruction":"以下哪一項是確保 MQTT 安全性的主要方法之一？",
+      "input":"A) 使用靜態 IP\nB) 啟用 TLS 加密\nC) 關閉所有 MQTT 主題\nD) 只使用 QoS 等級 0",
+      "output":"B) 啟用 TLS 加密"
+   },
+   {
+      "instruction":"以下哪一個 MQTT 的 QoS 等級保證消息確實傳送一次？",
+      "input":"A) 0\nB) 1\nC) 2\nD) 3",
+      "output":"B) 1"
+   },
+   {
+      "instruction":"對稱加密與非對稱加密的主要區別是什麼？請選擇最佳的描述。",
+      "input":"A) 對稱加密使用不同的密鑰進行加密和解密，而非對稱加密使用相同密鑰\nB) 對稱加密比非對稱加密更安全\nC) 非對稱加密使用一對公鑰和私鑰，而對稱加密使用單一密鑰\nD) 非對稱加密只能用於小型數據塊的加密",
+      "output":"C) 非對稱加密使用一對公鑰和私鑰，而對稱加密使用單一密鑰"
+   },
+   {
+      "instruction":"為何數位簽章能夠保證數據完整性？",
+      "input":"A) 因為簽章的數據經過加密處理\nB) 因為數位簽章使用公鑰加密\nC) 因為簽章由私鑰加密，並且驗證過程可檢查數據是否被篡改\nD) 因為簽章能保證數據的不可否認性",
+      "output":"C) 因為簽章由私鑰加密，並且驗證過程可檢查數據是否被篡改"
+   },
+   {
+      "instruction":"根據 RFC 1918，以下哪一個 IP 位址範圍屬於 Class B 私有 IP 位址範圍？",
+      "input":"A) 192.168.0.0 - 192.168.255.255\nB) 172.16.0.0 - 172.31.255.255\nC) 10.0.0.0 - 10.255.255.255\nD) 169.254.0.0 - 169.254.255.255",
+      "output":"B)172.16.0.0 - 172.31.255.255"
+   },
+   {
+      "instruction":"NAT 的主要用途是什麼？",
+      "input":"A) 增強網路安全性\nB) 將內部網路的私有 IP 位址轉換成公有 IP 位址\nC) 自動分配內部網絡 IP 位址\nD) 確保數據加密",
+      "output":"B) 將內部網路的私有 IP 位址轉換成公有 IP 位址"
+   },
+   {
+      "instruction":"DDNS 的主要功能是什麼？",
+      "input":"A) 將靜態 IP 位址分配給網路設備\nB) 使動態 IP 位址與固定域名相關聯\nC) 確保網路流量加密\nD) 動態改變網絡設備的子網路遮罩",
+      "output":"B) 使動態 IP 位址與固定域名相關聯"
+   },
+   {
+      "instruction":"MQTT 特別適用於下列哪一種場景？",
+      "input":"A) 高頻寬和低延遲的網絡\nB) 高頻寬和高可靠性的網絡\nC) 低頻寬、高延遲或不穩定的網絡\nD) 低頻寬和低延遲的網絡",
+      "output":"C) 低頻寬、高延遲或不穩定的網絡"
+   },
+   {
+      "instruction":"MQTT 的哪一個 QoS 等級適合不需要數據確認的場景？",
+      "input":"A) 0：最多傳送一次\nB) 1：至少傳送一次\nC) 2：確實傳送一次\nD) 3：每次都傳送",
+      "output":"A) 0：最多傳送一次"
+   },
+   {
+      "instruction":"在 MQTT 協議中，Broker 的主要作用是什麼？",
+      "input":"A) 存儲數據\nB) 分發消息給訂閱者\nC) 驗證用戶\nD) 確保消息加密",
+      "output":"B) 分發消息給訂閱者"
+   },
+   {
+      "instruction":"DHCP 伺服器在分配 IP 地址的過程中，哪一步驟是設備發送請求以確認使用提供的 IP 地址？",
+      "input":"A) DHCP Discover\nB) DHCP Offer\nC) DHCP Request\nD) DHCP Acknowledgement",
+      "output":"C) DHCP Request"
+   },
+   {
+      "instruction":"在網段 192.168.1.0/24 中，可供設備使用的 IP 地址範圍是？",
+      "input":"A) 192.168.1.1 - 192.168.1.254\nB) 192.168.1.0 - 192.168.1.255\nC) 192.168.0.1 - 192.168.1.254\nD) 192.168.1.100 - 192.168.1.200",
+      "output":"A) 192.168.1.1 - 192.168.1.254"
+   },
+   {
+      "instruction":"如果要訂閱農場 1 中所有溫室的所有感測器數據，應使用哪個 MQTT Topic 通配符？",
+      "input":"A) farm1/#\nB) farm1/+\nC) farm1/greenhouse/#\nD) farm1/greenhouse/+",
+      "output":"A) farm1/#"
+   },
+   {
+      "instruction":"在 MQTT 資料封包中，哪一個部分包含訊息的實際數據？",
+      "input":"A) 固定標頭 (Fixed Header)\nB) 可變標頭 (Variable Header)\nC) 訊息主體 (Payload)\nD) QoS 等級",
+      "output":"C) 訊息主體 (Payload)"
+   },
+   {
+      "instruction":"哪一項描述最能正確表達 Hash 演算法的功能？",
+      "input":"A) Hash 演算法可以加密和解密數據。\nB) Hash 演算法的輸出長度固定，並且具有不可逆性。\nC) Hash 演算法用於確保數據的機密性。\nD) Hash 演算法可以使用私鑰來驗證數據的完整性。",
+      "output":"B) Hash 演算法的輸出長度固定，並且具有不可逆性。"
+   },
+   {
+      "instruction":"哪種技術適合用於支付與門禁的近距離無線通信？",
+      "input":"A) Wi-Fi\nB) NFC\nC) LoRa\nD) Zigbee",
+      "output":"B) NFC"
+   },
+   {
+      "instruction":"BLE (低功耗藍牙) 的主要特點是什麼？",
+      "input":"A) 高數據速率\nB) 長距離傳輸\nC) 延長電池壽命\nD) 支援即時影像傳輸",
+      "output":"C) 延長電池壽命"
+   },
+   {
+      "instruction":"LoRa 的傳輸距離範圍通常是多少？",
+      "input":"A) 幾公尺\nB) 幾十公里\nC) 幾百公里\nD) 幾毫米",
+      "output":"B) 幾十公里"
+   },
+   {
+      "instruction":"藍牙技術使用哪一個免許可頻段？",
+      "input":"A) 1 GHz\nB) 2.4 GHz\nC) 5 GHz\nD) 900 MHz",
+      "output":"B) 2.4 GHz"
+   },
+   {
+      "instruction":"BLE 的 General Access Profile (GAP) 定義了什麼？",
+      "input":"A) 設備角色和通信模式\nB) 加密算法\nC) 無線頻段選擇\nD) 數據封包結構",
+      "output":"A) 設備角色和通信模式"
+   },
+   {
+      "instruction":"威脅模型的主要目的是什麼？",
+      "input":"A. 減少開發時間\nB. 預測市場需求\nC. 識別安全風險並制定防護措施\nD. 增加系統功能",
+      "output":"C. 識別安全風險並制定防護措施"
+   },
+   {
+      "instruction":"資料流圖 (DFD) 中，哪一項代表資料的儲存位置？",
+      "input":"A) 方框\nB) 箭頭\nC) 雙線\nD) 圓形",
+      "output":"C) 雙線"
+   },
+   {
+      "instruction":"信任邊界 (Trust Boundary) 的作用是什麼？",
+      "input":"A) 保證系統數據流的速度\nB) 區分不同信任層級的邊界\nC) 提供數據加密功能\nD) 改善系統性能",
+      "output":"B) 區分不同信任層級的邊界"
+   },
+   {
+      "instruction":"DREAD 模型中的風險計算公式是什麼？",
+      "input":"A) 損害 + 可重現性 + 可利用性 + 受影響的用戶 + 可發現性\nB) 損害 ×可重現性 × 可利用性 × 可重現性 × 可發現性\nC) 損害 + 可重現性 + 可利用性 - 受影響的用戶 - 可發現性\nD) 損害 × 可重現性 × 可利用性 × 受影響的用戶 / 可發現性",
+      "output":"A) 損害 + 可重現性 + 可利用性 + 受影響的用戶 + 可發現性"
+   },
+   {
+      "instruction":"CVSS (Common Vulnerability Scoring System) 的總體分數是如何計算的？",
+      "input":"A) 基本分數 × 時間性分數調整 × 環境分數調整\nB) 基本分數 + 時間性分數 + 環境分數\nC) 時間性分數 × 環境分數 - 基本分數\nD) 基本分數 ÷ 時間性分數 ÷ 環境分數",
+      "output":"A) 基本分數 × 時間性分數調整 × 環境分數調整"
+   },
+   {
+      "instruction":"以下哪一項是 GDPR 違規的可能後果？",
+      "input":"A) 全球銷售禁令\nB) 高額罰款或業務中斷\nC) 技術審查停滯\nD) 供應鏈中斷",
+      "output":"B) 高額罰款或業務中斷"
+   },
+   {
+      "instruction":"ISO 27001 的主要目的是什麼？",
+      "input":"A) 確保業務持續性\nB) 確保數據的機密性、完整性與可用性\nC) 減少系統漏洞\nD) 實施自動化管理",
+      "output":"B) 確保數據的機密性、完整性與可用性"
+   },
+   {
+      "instruction":"ISO 27001 的 PDCA 管理架構中，Act (行動) 的主要任務是什麼？",
+      "input":"A) 檢查過去計畫的不足並進行改進\nB) 觀察現況並識別風險\nC) 執行安全措施\nD) 準備安全策略文件",
+      "output":"A) 檢查過去計畫的不足並進行改進"
+   },
+   {
+      "instruction":"資安攻防中的紅隊使用哪種工具進行滲透測試？",
+      "input":"A) Splunk\nB) Metasploit\nC) ISO 27001\nD) CVSS",
+      "output":"B) Metasploit"
+   },
+   {
+      "instruction":"資安攻防中，為何 Samba 漏洞（CVE-2007-2447）可能導致權限提升？",
+      "input":"A) Samba 進行的加密不安全\nB) Samba 通常以 root 權限啟動服務\nC) Samba 忽略了用戶身份驗證\nD) Samba 的文件存儲無限制",
+      "output":"B) Samba 通常以 root 權限啟動服務"
+   }
+]

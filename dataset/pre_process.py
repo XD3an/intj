@@ -2,27 +2,45 @@
 
 import pandas as pd
 import json
+import random
 
-
-def make_instruction_fine_tuning_dataset(path_to_org_dataset: str, path_to_dst_dataset) -> bool:
+def ciciot2023_to_ift(path_to_org_dataset: str, path_to_dst_dataset, line: int) -> bool:
     # read the original dataset
     df = pd.read_csv(path_to_org_dataset)
     
+    instruction_list = [
+        "Based on the network features, predict the type of traffic.",
+        "Analyze the following network features during an unexpected spike in traffic and classify the traffic type.",
+        "Given the network features, predict the type of traffic.",
+        "Based on the network features, classify the traffic type.",
+        "Given the network features, classify the traffic type.",
+        "Analyze the network features and classify the traffic type.",
+        "Given the network features, predict the type of traffic.",
+        "Analyze the network features and predict the type of traffic.",
+        "Given the network features, classify the traffic type.",
+        "Analyze the network features and classify the traffic type.",
+    ]
+    
     json_data = []
+    times = 0
     for index, row in df.iterrows():
+        times += 1
         input_data = row.drop("label").to_dict()
         output_data = row["label"]
         
+        # I want to make instruction reandomly gerenated
         json_data.append({
-            "instruction": "Based on the network features, predict the type of traffic.",
-            "input": input_data,
+            "instruction": random.choice(instruction_list),  
+            "input":  f"{input_data}",
             "output": output_data
         })
         print(index)
+        if times == (line+1):
+            break
     
     output_file = path_to_dst_dataset
     with open(output_file, 'w') as f:
         json.dump(json_data, f)
 
 if __name__ == '__main__':
-    make_instruction_fine_tuning_dataset("dataset/merge1.csv", "dataset/fine1.json")
+    ciciot2023_to_ift("dataset/CICIoT2023_merge1.csv", "dataset/CICIoT2023_ift1_100.json", 100)
