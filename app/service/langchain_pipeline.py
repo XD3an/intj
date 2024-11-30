@@ -29,7 +29,7 @@ class INTJPromptChain:
         # Prompt template with more structured guidance
         self.prompt_template = PromptTemplate(
             template="""
-            🔒 INTJ: An LLM based IoT Network Threat Journeyman 🔒
+            🐶🔒 INTJ: An LLM based IoT Network Threat Journeyman 🔒🐶
 
             ### Operational Context:
             {context}
