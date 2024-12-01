@@ -1,6 +1,9 @@
 # INTJ: An LLM based IoT Network Threat Journeyman
 
-![INTJ-icon](./img/intj-transparent.png)
+<p align="center">
+  <img src="./img/background.png" alt="INTJ-icon_made with imagine.art" width="300" height="300">
+</p>
+
 
 ## Installation
 
