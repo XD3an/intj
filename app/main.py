@@ -3,7 +3,7 @@ from fastapi import FastAPI
 import logging
 
 from api.router import router
-import os
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,5 +21,3 @@ app = FastAPI(
 )
 
 app.include_router(router)
-# Ensure the logs directory exists
-os.makedirs("./logs", exist_ok=True)
