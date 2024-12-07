@@ -14,17 +14,17 @@
 
 ## Usage
 
-- Build model
+1. Build model
     ```
     ollama create <model_name> -f ./model/Modeilfile
     ```
 
-- Bulid ollama 
+2. Bulid ollama 
     ```
     ollama serve
     ```
 
-- Change the Model name and Base URL in the docker-compose.yml file
+3. Change the Model name and Base URL in the docker-compose.yml file
     ```
     ...
         environment:
@@ -33,13 +33,13 @@
     ...
     ```
 
-- FastAPI server
+4. FastAPI server
     - app/main.py
     ```
     uvicorn main:app --reload --host <host> --port <port>
     ```
 
-- Open WebUI
+5. Open WebUI
     - [https://docs.openwebui.com/](https://docs.openwebui.com/)
 
 
