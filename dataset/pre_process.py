@@ -1,11 +1,8 @@
-# make CICIoT2023 dataset to instruction fine tuning dataset
-
 import pandas as pd
 import json
 import random
 
 def ciciot2023_to_ift(path_to_org_dataset: str, path_to_dst_dataset, line: int) -> bool:
-    # read the original dataset
     df = pd.read_csv(path_to_org_dataset)
     
     instruction_list = [
@@ -28,7 +25,6 @@ def ciciot2023_to_ift(path_to_org_dataset: str, path_to_dst_dataset, line: int) 
         input_data = row.drop("label").to_dict()
         output_data = row["label"]
         
-        # I want to make instruction reandomly gerenated
         json_data.append({
             "instruction": random.choice(instruction_list),  
             "input":  f"{input_data}",
